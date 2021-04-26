@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data" class="form">
+        <div>
+            <input class="hide" name="file" type="file" id="file" multiple/>
+            <div id="drop-zone" class="drop-zone">
+                <i class="fas fa-file-upload"></i>
+                <p class="drop-zone__text">
+                    Drop file or click to upload file
+                </p>
+            </div>
+            <input type="submit" id="upload-button" class="form__button" value="Upload" />
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

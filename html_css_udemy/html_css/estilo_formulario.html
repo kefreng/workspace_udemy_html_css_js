@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        header {
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 120px;
+            background: #444;
+        }
+
+        #logo {
+            position: absolute;
+            background: white;
+            width: 200px;
+            height: 60px;
+            top: 30px;
+            left: 30px;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 50px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .redes {
+            position: absolute;
+            background: white;
+            width: 42px;
+            height: 42px;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 42px;
+            color: white;
+
+        }
+
+        #icono1 {
+            top: 42px;
+            right: 120px;
+            background: blue;
+        }
+
+        #icono2 {
+            top: 42px;
+            right: 71px;
+            background:green;
+        }
+
+        #icono3 {
+            top: 42px;
+            right: 19px;
+            background:purple;
+        }
+
+        nav {
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 48px;
+            background: rgb(173, 173, 173);
+        }
+
+        .botones {
+            float: left;
+            width: 196px;
+            height: 48px;
+            background: rgba(100, 0, 255,1);
+            margin: 0px 2px;
+            font-family: 'Kaushan Script', cursive; 
+            text-align: center;
+            line-height: 48px;
+            color: white;
+        }
+
+        #top {
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 192px;
+            /* background: rgb(141, 141, 141);  */
+        }
+
+        #top ul {
+            width: 1010px;
+            height: 192px;
+        }
+
+        #top ul li {
+            float: left;
+            width: 326px;
+            height: 192px;
+            /* background: lightskyblue; */
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        #top ul li img{
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+        }
+
+        #top ul li h1{
+            font-family: 'Kaushan Script', cursive; 
+        }
+
+        #top ul li p{
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        section {
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 453px;
+            /* background: rgb(224, 223, 223); */
+        }
+
+        aside#izq {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            /* background: #aaa; */
+        }
+
+        aside#izq ul li{
+            background: lightgray;
+            padding: 10px;
+            margin: 2px 10px;
+            list-style: circle;
+            list-style-position: inside;
+            list-style-image: url(asd/lista.png);
+        }
+
+        article {
+            position: absolute;
+            left: 200px;
+            top: 0;
+            width: 600px;
+            height: 453px;
+            /* background: rgb(59, 59, 59); */
+        }
+
+        article h1{
+            font-family: 'Kaushan Script', cursive; 
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        article p img{
+            float: left;
+            margin-right: 20px;
+        }
+
+        article p{
+            margin: 5px 20px;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        aside#der {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            /* background: #aaa; */
+        }
+
+        aside#der h1{
+            /* text-align: center;
+            padding: 5px;  */
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: rgba(100, 0, 255, 1);
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        aside#der input{
+            padding: 10px;
+            margin:5px 0;
+            width: 176px;
+        }
+
+        aside#der input[type="text"]{
+            background: url(asd/usuario.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        aside#der input[type="password"]{
+            background: url(asd/password.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        aside#der input[type="submit"]{ 
+            width: 200px;
+            background:rgba(100, 0, 100, .5);
+            border-radius: 0;
+        }
+
+
+        footer {
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 70px;
+            background: rgb(100, 0 , 255);
+            text-align: center;
+            line-height: 70px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">Logotipo</div>
+
+        <div id="icono1" class="redes">x</div>
+        <div id="icono2" class="redes">x</div>
+        <div id="icono3" class="redes">x</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="botones">boton 1</li>
+            <li class="botones">boton 2</li>
+            <li class="botones">boton 3</li>
+            <li class="botones">boton 4</li>
+            <li class="botones">boton 5</li>
+        </ul>
+    </nav>
+
+    <div id="top">
+        <ul>
+            <li>
+                <img src="asd/img01.jpg" width="100">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li><img src="asd/img02.jpg" width="100">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li><img src="asd/img03.jpg" width="100">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <aside id="izq">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+            </ul>
+        </aside>
+        <article>
+            <h1>Lorem Ipsum</h1>
+            <p><img src="asd/foto.jpg" width="250">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae,
+                quo. Aut quae ex neque ullam dolores recusandae itaque sunt, eaque porro suscipit repellendus possimus
+                iure earum optio? Animi, fugit magnam.</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia incidunt consequuntur vitae eius
+                facilis odio! Quaerat ipsa necessitatibus reprehenderit minus iste nisi recusandae debitis quidem,
+                aspernatur libero cumque nulla a!
+                Provident iusto dolores tempora sunt laboriosam rerum, a sequi dolor suscipit temporibus repudiandae
+                velit exercitationem fugit eaque illum distinctio modi totam quod nostrum, eveniet facere consequuntur!
+                Distinctio iste delectus veritatis.
+                Excepturi corporis, modi quos dignissimos quisquam, ipsum corrupti enim, facere facilis repellat labore.
+                Eveniet vel cum cupiditate amet nobis, magnam ipsam iure quo quidem nemo excepturi quaerat minus, fuga
+                sed.</p>
+
+        </article>
+        <aside id="der">
+            <h1>Ingreso</h1>
+
+            <form>
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <input type="submit" value="Enviar">
+            </form>
+
+        </aside>
+    </section>
+
+    <footer>
+        &copy; Todos los derechos reservados.
+    </footer>
+
+</body>
+
+</html>

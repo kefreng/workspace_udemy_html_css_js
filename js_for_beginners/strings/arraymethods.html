@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        document.write("<br>");
+
+        var names = ["Felix", "Felipe", "kili", "Franco", "Peluca"];
+        document.write(names);
+        document.write("<br>");
+        var x = names.toString();
+        document.write(x);
+        document.write("<br>");
+        /* var pop = names.pop();
+         document.write(pop);
+         document.write("<br>");
+         var pop2 = names.pop();
+         document.write(pop2);
+         document.write("<br>");*/
+        var sh = names.shift();
+        document.write(sh);
+        document.write("<br>");
+        var ush = names.unshift("Panocho");
+        document.write(names);
+        document.write("<br>"); 
+        var numbers = [1, 2, 3];
+        var new_array = names.concat(numbers);
+        var z = new_array.toString();
+
+        document.write(z);
+        document.write("<br>");
+
+        document.write(names[1] );
+         document.write("<br>");
+         //delete names[1];
+          names.splice(1,1);
+         document.write(names );
+         document.write("<br>");
+         document.write(names[1] );
+         document.write("<br>");
+         document.write(names.toString().toUpperCase() );
+         document.write("<br>");
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

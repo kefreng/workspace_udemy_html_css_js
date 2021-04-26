@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Demo">This title</title>
+    
+</head>
+<body>
+
+    <div id="divone">
+        <p id="para1">Hello this is para 1</p>
+    </div>
+    
+    <script type="text/javascript">
+        document.write("<br>");
+
+        // var myTitle = document.getElementById("Demo").firstChild.nodeValue;
+        // document.write(myTitle);
+        // var myTitle = document.getElementById("Demo").nodeName;
+        // document.write(myTitle);
+
+        var para = document.createElement("p");
+        //para.innerHTML = "This is the text for new para";
+        var paratextnode = document.createTextNode("This is the text for new para");
+        para.appendChild(paratextnode);
+
+        var e = document.getElementById("divone");
+        e.appendChild(para);
+
+        var parent = document.getElementById("divone");
+        var child = document.getElementById("para1");
+        parent.removeChild(child);
+
+    </script>
+
+</body>
+</html>
